@@ -1,0 +1,25 @@
+name: Publication preflight
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  tracked-source-scan:
+    name: Tracked source security and rights preflight
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout candidate branch
+        uses: actions/checkout@v4
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Scan tracked source
+        run: node scripts/check-public-release.mjs
+      - name: Historical and legal review still required
+        if: success()
+        run: |
+          echo "Tracked-file scan passed; this does not certify history, licenses, or production security."
