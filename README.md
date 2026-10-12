@@ -1,4 +1,4 @@
-# Math & Biotech Lab
+# Math-Biotech
 
 Interactive mathematics and biotechnology learning laboratory built as a web app, installable PWA, and Capacitor-based Android project from one shared codebase.
 
@@ -10,7 +10,7 @@ The project combines mathematical learning, biotechnology-oriented examples, det
 
 A final open-source license has not yet been selected. Until a `LICENSE` file is added, public visibility does not grant general reuse rights.
 
-**Live site:** https://inmersion-biotech.github.io/Math-Biotech-Project/
+**Live site:** https://inmersion-biotech.github.io/Math-Biotech/
 
 ## Current capabilities
 
