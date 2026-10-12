@@ -27,3 +27,21 @@ dist-ssr
 server/node_modules
 server/dist
 server/.env
+
+# Open-source preparation: credentials and local integrations
+.env
+.env.*
+!.env.example
+*.pem
+*.p12
+*.pfx
+*.keystore
+*.jks
+.npmrc
+**/service-account*.json
+**/serviceAccount*.json
+**/*private-key*.json
+**/firebase-adminsdk*.json
+artifacts/
+
+__pycache__/
