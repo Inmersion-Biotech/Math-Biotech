@@ -1,22 +1,24 @@
-# License decision — approval required
+# License decision — project code approved
 
-**No operative open-source license has been approved for this preparation branch.** A GitHub repository being visible does not automatically grant reuse rights.
+**Approved:** Apache License, Version 2.0, for project-authored software code, as far as the applicable authors hold sufficient rights to license it. The complete text is in [LICENSE](LICENSE); the explicit limits are in [LICENSE_SCOPE.md](LICENSE_SCOPE.md).
 
-## Proposed licensing approach
+**Not approved automatically:** education/course/exam materials, images, 3D models, molecular data, scientific datasets, source material from other rights holders, historical private material or trademarks.
 
-- **Project-authored software source:** **Apache License 2.0** (recommended for its explicit patent grant and contribution terms), or MIT if the maintainer prefers a shorter permissive license.
-- **Original educational explanations, diagrams and datasets with verified ownership:** consider **CC BY 4.0**, separately and explicitly identified.
-- **Third-party dependencies and assets:** retain each original license and attribution.
-- **Private course documents, examinations, author metadata, trademarks and materials without clear permission:** **exclude from public distribution**. Do not assume they can be relicensed.
+## Separate content licensing
 
-## Sign-off before activation
+For independently authored educational diagrams, explanations and data whose ownership is verified, **CC BY 4.0 is a proposal only**. It is **not** granted by this software-license decision. Third-party materials retain their original copyright and licenses.
 
-- [ ] Confirm ownership/permission for the source code and all bundled assets.
-- [ ] Choose Apache-2.0 or MIT for eligible code.
-- [ ] Confirm contributor copyright / organization attribution.
-- [ ] Determine licenses for *owned* original educational media and data.
-- [ ] Add the complete official text as `LICENSE`, plus any required notices.
-- [ ] Revalidate Git history, tags and release archives.
-- [ ] Update README to show the **actual** license identifier after approval.
+## Checks still required before publication
 
-Do not publish a license badge claiming Apache/MIT until `LICENSE` exists.
+- [x] Select Apache-2.0 for eligible original source code.
+- [x] Add the complete official Apache-2.0 text.
+- [x] State clearly which non-code material is excluded.
+- [ ] Verify all included source authors and third-party contributions are cleared.
+- [ ] Verify the specific assets and datasets in a future public distribution.
+- [ ] Determine a separate license for owned educational content if desired.
+- [ ] Review attribution, notices and copyright-holder statements.
+- [ ] Clean/review Git history, release archives and sensitive material.
+- [ ] Resolve outstanding authentication and dependency security risks.
+- [ ] Approve the **public release** separately; a license alone is not publication approval.
+
+See [RELEASE_CHECKLIST.md](RELEASE_CHECKLIST.md).

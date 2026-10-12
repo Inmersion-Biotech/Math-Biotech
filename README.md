@@ -11,7 +11,7 @@
 [![CI](https://github.com/Inmersion-Biotech/Math-Biotech/actions/workflows/ci.yml/badge.svg)](https://github.com/Inmersion-Biotech/Math-Biotech/actions/workflows/ci.yml)
 ![TypeScript](https://img.shields.io/badge/Language-TypeScript-3178C6)
 ![Platform](https://img.shields.io/badge/Platform-Web%20%7C%20PWA%20%7C%20Android-136F63)
-![Licensing](https://img.shields.io/badge/Licensing-under%20review-988053)
+[![Code License: Apache-2.0](https://img.shields.io/badge/Code%20License-Apache--2.0-0066cc)](LICENSE_SCOPE.md)
 
 **[Explore](#the-learning-laboratory) · [Architecture](#architecture) · [Quick start](#quick-start) · [Security](SECURITY.md) · [Contributing](CONTRIBUTING.md)**
 
@@ -60,7 +60,7 @@ Read [SECURITY.md](SECURITY.md), [CONTENT_POLICY.md](CONTENT_POLICY.md) and [REL
 
 ## Contributions and licensing
 
-Read [CONTRIBUTING.md](CONTRIBUTING.md) and [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md). Although this repository is public, an operative open-source license has **not yet been approved**. See [LICENSE-DECISION.md](LICENSE-DECISION.md).
+Read [CONTRIBUTING.md](CONTRIBUTING.md) and [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md). Eligible project-authored software code in this preparation branch is licensed under [Apache-2.0](LICENSE), with [documented exclusions](LICENSE_SCOPE.md). Changes are pending review and have not yet been merged into public `main`. See [LICENSE-DECISION.md](LICENSE-DECISION.md).
 
 ---
 

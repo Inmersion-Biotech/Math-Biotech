@@ -21,6 +21,6 @@ Thank you for helping improve scientific learning software. We value accurate ex
 
 Describe **what changed**, **why**, **how it was verified**, **screenshots for UI changes**, and **privacy/security implications**. Keep changes reviewable.
 
-By contributing, you confirm you are permitted to submit the code and materials under the project's **future approved license**. Until the licensing decision is complete, substantial third-party code/assets cannot be accepted without separate permission.
+By contributing, you confirm you are permitted to submit the code and materials under **Apache-2.0 for original project-authored code**. Third-party code, course material, media and datasets require separate rights clearance; do not submit them without permission.
 
 Security issues should follow [SECURITY.md](SECURITY.md), not public issues.
