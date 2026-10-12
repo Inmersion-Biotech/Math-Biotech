@@ -1,130 +1,67 @@
-# Math-Biotech
+<div align="center">
 
-Interactive mathematics and biotechnology learning laboratory built as a web app, installable PWA, and Capacitor-based Android project from one shared codebase.
+# MATH × BIOTECH
 
-The project combines mathematical learning, biotechnology-oriented examples, deterministic calculations, three-dimensional visualization, study tracking, and AI-assisted explanations.
+**Explore patterns of change, structure and living systems.**
 
-## Project status
+*An interactive mathematics and scientific modeling laboratory.*
 
-**Active development — public source repository.**
+### [Launch the interactive lab ↗](https://inmersion-biotech.github.io/Math-Biotech/site/)
 
-A final open-source license has not yet been selected. Until a `LICENSE` file is added, public visibility does not grant general reuse rights.
+[![CI](https://github.com/Inmersion-Biotech/Math-Biotech/actions/workflows/ci.yml/badge.svg)](https://github.com/Inmersion-Biotech/Math-Biotech/actions/workflows/ci.yml)
+![TypeScript](https://img.shields.io/badge/Language-TypeScript-3178C6)
+![Platform](https://img.shields.io/badge/Platform-Web%20%7C%20PWA%20%7C%20Android-136F63)
+[![Code License: Apache-2.0](https://img.shields.io/badge/Code%20License-Apache--2.0-0066cc)](LICENSE_SCOPE.md)
 
-**Live site:** https://inmersion-biotech.github.io/Math-Biotech/site/
+**[Explore](#the-learning-laboratory) · [Architecture](#architecture) · [Quick start](#quick-start) · [Security](SECURITY.md) · [Contributing](CONTRIBUTING.md)**
 
-## Current capabilities
+</div>
 
-- Biotechnology-oriented mathematical lessons and examples
-- Matrix addition, multiplication, determinant, and inverse workflows
-- Exam-performance tracking and statistics
-- Formula rendering with KaTeX
-- Interactive 3D content with Three.js
-- AI-assisted explanations
-- Installable PWA support
-- Android packaging through Capacitor
-- REST API for calculations and study integrations
+---
 
-## Technology
+## The learning laboratory
 
-### Client
+| Learn | Experiment | Understand |
+|:---|:---|:---|
+| Algebra, functions, limits, calculus and equations | Numerical calculations, interactive graphs and 3D scenes | Models of growth, change and biological systems |
+| Structured lessons and examinations | Explore assumptions through visualization | Compare predictions and interpret results |
 
-React 19 · TypeScript · Vite · Tailwind CSS · Math.js · KaTeX · Three.js · React Three Fiber · Framer Motion · Vite PWA · Capacitor · Vitest
-
-### Backend
-
-Node.js · Express · TypeScript
+Eight pathways: **Matrix · Sequences · Functions · Limits · Derivatives · Integrals · Differential equations · Exams**.
 
 ## Architecture
 
-```text
-Web / PWA / Android client
-             │
-             ▼
-      Versioned REST API
-             │
-     ┌───────┴────────┐
-     ▼                ▼
-Deterministic      Study records and
-math operations    controlled AI gateway
-```
+| Layer | Technology |
+|---|---|
+| Frontend | React 19, TypeScript, Vite, Tailwind CSS |
+| Scientific tools | KaTeX and mathematical utilities |
+| Interactive visuals | Three.js, React Three Fiber, Framer Motion |
+| Platform | Installable PWA and Capacitor Android |
+| Optional API | Node.js, Express, TypeScript |
+| Verification | TypeScript, Vitest, GitHub Actions |
 
-The web, PWA, and mobile builds are intended to share course logic. Platform-specific behavior should stay behind explicit adapters rather than separate copies of the application.
+## Quick start
 
-## Development
+Requires Node.js 22 LTS (or another compatible version) and npm.
 
-### Web
+1. Run `npm ci`.
+2. Run `npm run dev`.
+3. Before proposing changes run `npm run verify`.
+4. Production build: `npm run build`; preview with `npm run preview`.
 
-```bash
-npm install
-npm run dev
-npm run verify
-```
+Backend development is described in [server/README.md](server/README.md). Android builds require an installed Android development environment.
 
-### Backend
+## Responsible scientific computing
 
-```bash
-cd server
-npm install
-npm run dev
-```
+- Visual models and calculations are learning tools, not laboratory measurements.
+- Avoid private learner data, passwords and tokens in source files or logs.
+- The optional AI module still has a browser bring-your-own-key mechanism. Do **not** consider browser storage a secure production credential vault; hosted access requires a reviewed backend boundary.
 
-The development API uses `http://localhost:5000` by default. Backend details are documented in [`server/README.md`](server/README.md).
+Read [SECURITY.md](SECURITY.md), [CONTENT_POLICY.md](CONTENT_POLICY.md) and [RELEASE_CHECKLIST.md](RELEASE_CHECKLIST.md).
 
-### Android
+## Contributions and licensing
 
-```bash
-npm run build
-npx cap sync android
-npx cap open android
-```
+Read [CONTRIBUTING.md](CONTRIBUTING.md) and [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md). Eligible project-authored software code in this preparation branch is licensed under [Apache-2.0](LICENSE), with [documented exclusions](LICENSE_SCOPE.md). Changes are pending review and have not yet been merged into public `main`. See [LICENSE-DECISION.md](LICENSE-DECISION.md).
 
-## AI security
+---
 
-The current AI interface includes a bring-your-own-key browser flow. Browser-persisted provider credentials are not suitable for an official hosted release.
-
-The intended production direction is an authenticated backend gateway with no provider key in the web/mobile bundle, per-user authorization, input and rate limits, usage monitoring, timeout handling, explicit response schemas, safe Markdown rendering, and minimal logs that exclude private learning content.
-
-AI-generated explanations should remain secondary to deterministic mathematical verification.
-
-## Testing priorities
-
-- Matrix and numerical calculations
-- Invalid and boundary inputs
-- Formula parsing and rendering
-- Exam scoring and progress calculations
-- API request validation
-- AI response-schema handling
-- Consistency between web and mobile builds
-
-Client verification:
-
-```bash
-npm run verify
-```
-
-Backend API check:
-
-```bash
-cd server
-npm test
-```
-
-## Before an open-source release
-
-- [ ] Select and add an open-source license.
-- [ ] Audit the current tree and Git history for credentials and private files.
-- [ ] Remove browser-persisted provider-key handling from production flows.
-- [ ] Route production AI calls through the backend.
-- [ ] Add CI for tests, builds, dependency review, and secret scanning.
-- [ ] Add contribution, security, and code-of-conduct documentation.
-- [ ] Document the license and source of course content and visual assets.
-- [ ] Publish reproducible web and Android release procedures.
-- [ ] Add privacy, export, and account-deletion documentation where user data is stored.
-
-## Scientific and educational responsibility
-
-Mathematical results and AI-generated explanations should be independently checked before academic, laboratory, clinical, or professional use. Simplified models should be identified as models rather than complete representations of living systems.
-
-## Author
-
-Developed by [Halil Ibrahim Ozturk](https://github.com/Inmerson).
+<div align="center"><sub>INMERSION BIOTECH · SCIENCE THROUGH OBSERVATION</sub></div>
